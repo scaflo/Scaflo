@@ -1,0 +1,64 @@
+{
+  "name": "@scaflo/scaflo",
+  "version": "1.0.0",
+  "description": "A CLI to generate a Node.js Express TypeScript app",
+  "homepage": "https://github.com/swapnesh839/Scaflo#readme",
+  "bugs": {
+    "url": "https://github.com/swapnesh839/Scaflo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnesh839/Scaflo.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Swapnesh Panda",
+  "contributors": [
+    "swapnesh839"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "scaflo": "bin/cli.js"
+  },
+  "scripts": {
+    "dev": "tsc-watch --noClear --onSuccess \"node ./bin/cli.js\"",
+    "deploy": "yarn && yarn build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "@scaflo/scaflo": "^1.0.0",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "degit": "^2.8.4",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.1",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/degit": "^2.8.6",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "prettier": "^3.5.1",
+    "ts-watch": "^1.0.8",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.7.3"
+  }
+}
