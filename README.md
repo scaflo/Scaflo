@@ -1,5 +1,5 @@
 <!-- # Scaflo -->
-![Scaflo](./public/Scaflo_2.png){: width="300" height="140" style="object-fit: cover"}
+<img src="./public/Scaflo_2.png" width="300" height="140" style="object-fit: cover">
 
 🚀 Welcome to **Scaflo** – Simplify your development workflow with our powerful scaffolding tool.
 
