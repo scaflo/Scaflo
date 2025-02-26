@@ -66,7 +66,6 @@ npx scaflo init
 - node
 - next
 - react
-- scaflo-react
 - vite-ssr
 
 
