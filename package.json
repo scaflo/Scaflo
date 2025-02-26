@@ -1,7 +1,7 @@
 {
   "name": "@scaflo/scaflo",
-  "version": "1.0.4",
-  "description": "A CLI to generate a Node.js Express TypeScript app",
+  "version": "1.0.5",
+  "description": "A CLI to generate a Node+Next+React+Vite template",
   "homepage": "https://github.com/swapnesh839/Scaflo#readme",
   "bugs": {
     "url": "https://github.com/swapnesh839/Scaflo/issues"
@@ -24,7 +24,13 @@
     "dev": "tsc-watch --noClear --onSuccess \"node ./bin/cli.js\"",
     "deploy": "yarn && yarn build",
     "lint": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "git diff --name-only --cached --relative | grep -E '\\.(js|jsx|ts|tsx)$' | xargs eslint --fix && git diff --name-only --cached --relative | grep -E '\\.(js|jsx|ts|tsx|json|md|css|scss)$' | xargs prettier --write && git add ."
+    }
   },
   "publishConfig": {
     "access": "public"
@@ -46,7 +52,6 @@
     "@types/degit": "^2.8.6",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.5",
-    "@types/react": "^19.0.10",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
     "@typescript-eslint/parser": "^8.23.0",
     "eslint": "^9.19.0",
@@ -55,6 +60,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tsdoc": "^0.4.0",
+    "husky": "^9.1.7",
     "prettier": "^3.5.1",
     "tsc-watch": "^6.2.1",
     "typescript": "^5.7.3"

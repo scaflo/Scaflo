@@ -38,10 +38,30 @@ try {
         console.log(`  - ${chalk.green(t)}`),
       );
     });
+  program
+    .command("serve")
+    .description("Serve a project")
+    .action(() => {
+      console.log("serve");
+    });
 
   program
-    .command("init [project-name]")
-    .description("Initialize a new project or clone a template")
+    .command("build")
+    .description("Build a project")
+    .action(() => {
+      console.log("build");
+    });
+
+  program
+    .command("dev")
+    .description("Deploy a project")
+    .action(() => {
+      console.log("dev");
+    });
+
+  program
+    .command("init")
+    .description("Initialize a new project")
     .option(
       "-t, --template <type>",
       `Specify a template (Available: ${Object.keys(templates).join(", ")})`,

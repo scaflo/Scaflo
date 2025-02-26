@@ -14,24 +14,28 @@
 You can install **Scaflo** using different package managers:
 
 ### Using Yarn
+
 ```sh
 yarn global add @scaflo/scaflo
 scaflo init
 ```
 
 ### Using pnpm
+
 ```sh
 pnpm add -g @scaflo/scaflo
 scaflo init
 ```
 
 ### Using npm
+
 ```sh
 npm i -g @scaflo/scaflo
 scaflo init
 ```
 
 ### Using npx
+
 ```sh
 npx scaflo init
 ```
@@ -48,5 +52,22 @@ npx scaflo init
 </p>
 
 ---
+
+# Available Templates
+
+## TypeScript
+- node
+- next
+- react
+- vite-ssr
+- scaflo-react (🚧 Under Development)
+
+## JavaScript
+- node
+- next
+- react
+- scaflo-react
+- vite-ssr
+
 
 Created with ❤️ by [swapnesh839](https://github.com/swapnesh839).

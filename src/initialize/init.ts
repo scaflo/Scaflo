@@ -8,8 +8,8 @@ import { repo, templates } from "../constraints/templates.js";
 import TemplateProvider from "../TemplateProvider/TemplateProvider.js";
 
 export default async function init(): Promise<void> {
-//   projectName?: string,
-//   template?: string
+  //   projectName?: string,
+  //   template?: string
   try {
     // if (!template) {
     //   const { selectedTemplate } = await inquirer.prompt([
@@ -118,10 +118,17 @@ export default async function init(): Promise<void> {
         type: "list",
         name: "selectedTemplate",
         message: "Choose a template:",
-        choices: ["node", "next", "react"],
+        choices: ["node", "next", "react", "scaflo-react","vite-ssr"],
       },
     ]);
-
+    if (selectedTemplate === "scaflo-react" && language === "typescript") {
+      console.error(
+        chalk.blueBright(
+          "\n❌ scaflo-react is not available for typescript,Hold A While! We are working on it :)"
+        )
+      );
+      process.exit(1);
+    }
     await TemplateProvider({
       projectName: projectName!,
       projectPath: projectName,
@@ -129,6 +136,7 @@ export default async function init(): Promise<void> {
     });
 
     console.log(chalk.green("✅ Project initialized successfully!\n"));
+    process.exit(0);
   } catch (error) {
     console.error(chalk.red("\n❌ An error occurred during initialization:"));
     console.error(chalk.yellow((error as Error).message));
