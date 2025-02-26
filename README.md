@@ -53,4 +53,21 @@ npx scaflo init
 
 ---
 
+# Available Templates
+
+## TypeScript
+- node
+- next
+- react
+- vite-ssr
+- scaflo-react (🚧 Under Development)
+
+## JavaScript
+- node
+- next
+- react
+- scaflo-react
+- vite-ssr
+
+
 Created with ❤️ by [swapnesh839](https://github.com/swapnesh839).
