@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/scaflo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI to generate a Node+Next+React+Vite template",
   "homepage": "https://github.com/swapnesh839/Scaflo#readme",
   "bugs": {
