@@ -1,0 +1,10 @@
+{
+  "entryPoints": [
+    "src/cli.ts"
+  ],
+  "out": "docs",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "readme": "none"
+}
