@@ -53,5 +53,5 @@ export default async function TemplateProvider({
 
   console.log(chalk.green("\nSetup complete! 🎉"));
   console.log("\nRun the following commands:\n");
-  console.log(chalk.cyan(`cd ${projectName} && yarn && yarn dev`));
+  console.log(chalk.cyan(`cd ${projectName} && npm i && npm run dev`));
 }

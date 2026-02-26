@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/scaflo",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "A CLI to generate a Node+Next+React+Vite template",
   "homepage": "https://github.com/swapnesh839/Scaflo#readme",
   "bugs": {
@@ -17,6 +17,9 @@
   ],
   "type": "module",
   "main": "index.js",
+  "files": [
+    "bin"
+  ],
   "bin": {
     "scaflo": "bin/cli.js"
   },
@@ -25,7 +28,8 @@
     "deploy": "yarn && yarn build",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
-    "generate-docs": "typedoc"
+    "generate-docs": "typedoc",
+    "build": "tsc"
   },
   "publishConfig": {
     "access": "public"

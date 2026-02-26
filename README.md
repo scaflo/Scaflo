@@ -37,7 +37,7 @@ scaflo init
 ### Using npx
 
 ```sh
-npx scaflo init
+npx @scaflo/scaflo init
 ```
 
 ## Links
