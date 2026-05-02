@@ -98,7 +98,7 @@ export default async function init() {
                 type: "list",
                 name: "language",
                 message: "Choose a language:",
-                choices: ["typescript", "javascript"],
+                choices: ["typescript", "javascript(deprecated)"],
             },
             {
                 type: "list",

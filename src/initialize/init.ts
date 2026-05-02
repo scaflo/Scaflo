@@ -112,14 +112,15 @@ export default async function init(): Promise<void> {
         type: "list",
         name: "language",
         message: "Choose a language:",
-        choices: ["typescript", "javascript"],
+        choices: ["typescript", "javascript(deprecated)"],
       },
       {
         type: "list",
         name: "selectedTemplate",
         message: "Choose a template:",
-        choices: ["node", "next", "react", "scaflo-react","vite-ssr"],
+        choices: ["node", "next", "react", "scaflo-react", "vite-ssr"],
       },
+
     ]);
     if (selectedTemplate === "scaflo-react" && language === "typescript") {
       console.error(
